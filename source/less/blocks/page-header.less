@@ -1,0 +1,151 @@
+.page-header {
+  min-height: 480px;
+  background-blend-mode: multiply;
+  background-image: url("../../img/daria@mobile.jpg");
+  background-color: #83868a;
+}
+
+.page-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 152px;
+}
+
+.page-header__logo {
+  width: 112px;
+  height: 33px;
+  background: url("../../img/logo.png");
+  margin-left: -15px;
+}
+
+.page-header__burger {
+  position: relative;
+  width: 25px;
+  height: 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 -6px 0 0 #ffffff;
+  }
+}
+
+.page-header__close {
+  display: none;
+  position: relative;
+  width: 16px;
+  height: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header__menu-hidden {
+  display: none;
+}
+
+.page-header__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  .no-indentations;
+}
+
+.page-header__item {
+  font-size: 21.59px;
+  margin-bottom: 40px;
+}
+
+.page-header__item-link {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: @main-green;
+  }
+}
+
+.page-header__contacts {
+  display: none;
+}
+
+.page-header__phone {
+  text-decoration: none;
+  color: #000000;
+}
+
+.page-header__main {
+  position: relative;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: -21px;
+    width: 293px;
+    height: 330px;
+    border: 6px solid @main-green;
+  }
+}
+
+.page-header__title {
+  font-size: 30px;
+}
+
+.page-header__text {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.page-header__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}

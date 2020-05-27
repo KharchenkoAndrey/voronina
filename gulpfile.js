@@ -15,15 +15,15 @@ let path = {
     html: [sourceFolder + '/*.html', '!' + sourceFolder + '/_*.html'],
     css: sourceFolder + '/less/style.less',
     js: sourceFolder + '/js/script.js',
-    img: sourceFolder + '/img/**/*.{jpg, png, svg, gif, ico, webp}',
-    fonts: sourceFolder + '/fonts/*.ttf',
+    img: sourceFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+    fonts: sourceFolder + '/fonts/*.ttf'
   },
 
   watch: {
     html: sourceFolder + '/**/*.html',
     css: sourceFolder + '/less/**/*.less',
     js: sourceFolder + '/js/**/*.js',
-    img: sourceFolder + '/img/**/*.{jpg, png, svg, gif, ico, webp}',
+    img: sourceFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
   },
 
   clean: './' + projectFolder + '/'

@@ -127,10 +127,11 @@
     content: "";
     position: absolute;
     top: -80px;
-    left: -21px;
+    left: -15px;
     width: 293px;
     height: 330px;
-    border: 6px solid @main-green;
+    /*border: 6px solid @main-green;*/
+    background-image: url("../../img/border.png");
   }
 }
 
@@ -144,8 +145,29 @@
 }
 
 .page-header__link {
+  position: relative;
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: -36px;
+    width: 26px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: calc(100% + 36px);
+    height: 2px;
+    background-color: #ffffff;
+  }
 }

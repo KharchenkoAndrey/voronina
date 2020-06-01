@@ -1,0 +1,35 @@
+.portfolio-detail {
+  min-height: 300px;
+  background-blend-mode: multiply;
+  background-image: url("../../img/portfolio-detail.jpg");
+  background-color: #7f7f7f;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 120px;
+  color: #ffffff;
+}
+
+.portfolio-detail__information {
+  position: relative;
+  width: 277px;
+  padding-top: 65px;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 7px;
+    width: 277px;
+    height: 388px;
+    background-image: url("../../img/border2.png");
+  }
+}
+
+.portfolio-detail__title {
+  font-size: 18px;
+}
+
+.portfolio-detail__text {
+  font-size: 14px;
+}

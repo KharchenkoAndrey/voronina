@@ -113,6 +113,7 @@
 
 .page-header__contacts {
   display: none;
+  font-size: 18px;
 }
 
 .page-header__phone {
@@ -179,5 +180,131 @@
     &::after {
       background-color: #000000;
     }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    position: relative;
+    min-height: 823px;
+    background-image: url("../../img/hader-background@tablet.jpg");
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 250px);
+      left: 50%;
+      width: 327px;
+      height: 499px;
+      background-image: url("../../img/daria@tablet.jpg");
+    }
+  }
+
+  .page-header__logo {
+    width: 201px;
+    height: 60px;
+    background: url("../../img/logo@tablet.png");
+    margin-left: -64px;
+  }
+
+  .page-header__burger {
+    &::before,
+    &::after {
+      background-color: #000000;
+    }
+
+    &::after {
+      box-shadow: 0 -6px 0 0 #000000;
+    }
+  }
+
+  .page-header__contacts {
+    display: block;
+    font-weight: bold;
+  }
+
+  .page-header__main {
+    color: #000000;
+    padding-top: 100px;
+    /*transform: translateY(130px);*/
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .page-header__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .page-header__text {
+    font-size: 16px;
+  }
+
+  .page-header__link {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+
+    &::before,
+    &::after {
+      background-color: #000000;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-image: url("../../img/header-background@desktop.png");
+
+    &::before {
+      left: calc(50% - 50px);
+    }
+  }
+
+  .page-header__logo {
+    width: 254px;
+    height: 76px;
+    background: url("../../img/logo@desktop.png");
+    margin-left: -166px;
+  }
+
+  .page-header__burger {
+    display: none;
+  }
+
+  .page-header__menu-hidden {
+    display: block;
+  }
+
+  .page-header__list {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 425px;
+    opacity: 66%;
+  }
+
+  .page-header__item {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .page-header__item:first-child {
+    display: none;
+  }
+
+  .page-header__item-link {
+    &::after {
+      display: none;
+    }
+  }
+
+  .page-header__phone {
+    color: #878787;
   }
 }

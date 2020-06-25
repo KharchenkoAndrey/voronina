@@ -34,3 +34,72 @@
 .portfolio-detail__text {
   font-size: 14px;
 }
+
+@media (min-width: @tablet-width) {
+  .portfolio-detail {
+    color: #000000;
+    background: linear-gradient(to right, #f8f8f8 80%, #ffffff 80%);
+  }
+
+  .portfolio-detail__information {
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-left: 20px;
+
+    &::before {
+      background-image: none;
+      width: 583px;
+      height: 345px;
+      border: 8px solid @main-green;
+      top: 25px;
+      left: -100px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: -90%;
+      width: 261px;
+      height: 274px;
+      background-image: url("../../img/portfolio-detail@tablet.jpg");
+    }
+  }
+
+  .portfolio-detail__title {
+    font-size: 24px;
+  }
+
+  .portfolio-detail__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .portfolio-detail {
+    min-height: 380px;
+    background: linear-gradient(to right, #f8f8f8 70%, #ffffff 70%);
+  }
+
+  .portfolio-detail__information {
+    padding-top: 130px;
+    padding-left: 30px;
+
+    &::before {
+      width: 712px;
+      height: 470px;
+    }
+
+    &::after {
+      width: 611px;
+      height: 373px;
+      background-image: url("../../img/portfolio-detail@desktop.jpg");
+      left: -600px;
+    }
+  }
+
+  .portfolio-detail__text {
+    font-size: 18px;
+  }
+}

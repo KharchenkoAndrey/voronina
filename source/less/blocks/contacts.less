@@ -58,3 +58,34 @@
   height: 18px;
   fill: #ffffff;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 24px;
+  }
+
+  .contacts__link {
+    font-size: 16px;
+  }
+
+  .contacts__link span {
+    padding: 0 25px;
+  }
+
+  .contacts__social-link {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__title {
+    font-size: 36px;
+  }
+
+  .contacts__links {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

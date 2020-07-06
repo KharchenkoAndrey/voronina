@@ -25,3 +25,40 @@
   font-size: 14px;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .price__cards {
+    min-height: 685px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price__item {
+    margin-bottom: 0;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .price__item:nth-child(1) {
+    /*width: 240px;*/
+  }
+
+  .price__item:nth-child(2) {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__cards {
+    min-height: 1175px;
+  }
+
+  .price__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

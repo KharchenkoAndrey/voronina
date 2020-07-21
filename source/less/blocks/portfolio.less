@@ -47,6 +47,7 @@
     grid-template-columns: 240px 1fr 1fr;
     grid-template-rows: auto repeat(2, 1fr);
     grid-gap: 0 17px;
+    margin-bottom: 124px;
   }
 
   .portfolio-title {
@@ -56,9 +57,16 @@
     grid-column-end: 4;
     text-align: center;
     font-size: 24px;
+    margin-bottom: 60px;
+
+    &::before {
+      top: -45px;
+      height: 38px;
+    }
   }
 
   .portfolio-item {
+    min-height: 320px;
     margin-bottom: 0;
   }
 
@@ -94,7 +102,7 @@
 }
 
 @media (min-width: @desktop-width) {
-    .portfolio {
-      grid-template-columns: 414px 1fr 1fr;
-    }
+  .portfolio {
+    grid-template-columns: 414px 1fr 1fr;
+  }
 }

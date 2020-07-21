@@ -200,6 +200,7 @@
     background-color: #f8f8f8;
     background-repeat: no-repeat;
     background-position: 100% 0;
+    margin-bottom: 204px;
 
     &::before {
       content: "";
@@ -212,14 +213,21 @@
     }
   }
 
+  .page-header__top {
+    justify-content: flex-start;
+  }
+
   .page-header__logo {
     width: 201px;
     height: 60px;
     background: url("../../img/logo@tablet.png");
     margin-left: -64px;
+    margin-right: 106px;
   }
 
   .page-header__burger {
+    margin-right: 176px;
+
     &::before,
     &::after {
       background-color: #000000;
@@ -247,11 +255,13 @@
 
   .page-header__title {
     font-size: 36px;
-    margin-bottom: 40px;
+    margin-top: 29px;
+    margin-bottom: 35px;
   }
 
   .page-header__text {
     font-size: 16px;
+    margin-bottom: 37px;
   }
 
   .page-header__link {

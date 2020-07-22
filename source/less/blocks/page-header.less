@@ -222,7 +222,7 @@
     height: 60px;
     background: url("../../img/logo@tablet.png");
     margin-left: -64px;
-    margin-right: 106px;
+    margin-right: 85px;
   }
 
   .page-header__burger {
@@ -279,9 +279,13 @@
 @media (min-width: @desktop-width) {
   .page-header {
     background-image: url("../../img/header-background@desktop.png");
+    margin-bottom: 172px;
 
     &::before {
-      left: calc(50% - 50px);
+      width: 348px;
+      height: 533px;
+      background-image: url("../../img/daria@desktop.jpg");
+      left: calc(50% - 60px);
     }
   }
 
@@ -298,6 +302,20 @@
 
   .page-header__menu-hidden {
     display: block;
+  }
+
+  .page-header__title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .page-header__text {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .page-header__main {
+    padding-top: 47px;
   }
 
   .page-header__list {
@@ -320,6 +338,10 @@
     &::after {
       display: none;
     }
+  }
+
+  .page-header__contacts {
+    margin-left: 150px;
   }
 
   .page-header__phone {
